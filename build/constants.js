@@ -37,13 +37,14 @@ exports.cmakeArchs = {
     'arm': ' ARM'
 };
 exports.defaultCmakeFlags = [
+    '-GXcode',
+    `-DCMAKE_INSTALL_PREFIX=${dirs.opencvBuild}`,
     '-DCMAKE_SYSTEM_PROCESSOR=arm64',
     '-DCMAKE_OSX_ARCHITECTURES=arm64',
     '-DWITH_OPENJPEG=OFF',
     '-DWITH_IPP=OFF',
     '-DBUILD_EXAMPLES=OFF',
     '-D CMAKE_BUILD_TYPE=RELEASE',
-    '-D CMAKE_INSTALL_PREFIX=/usr/local',
     '-DBUILD_opencv_python3=OFF',
     '-DBUILD_opencv_python_bindings_generator=OFF',
     '-D OPENCV_ENABLE_NONFREE=ON',
