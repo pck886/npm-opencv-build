@@ -44,8 +44,7 @@ exports.defaultCmakeFlags = [
     '-DBUILD_EXAMPLES=OFF',
     '-D CMAKE_BUILD_TYPE=RELEASE',
     '-D CMAKE_INSTALL_PREFIX=/usr/local',
-    '-D PYTHON3_EXECUTABLE=/opt/homebrew/Caskroom/miniforge/base/envs/pos/bin/python3',
-    '-D BUILD_opencv_python2=OFF',
-    '-D BUILD_opencv_python3=ON',
+    '-DBUILD_opencv_python3=OFF',
+    '-DBUILD_opencv_python_bindings_generator=OFF',
     '-D OPENCV_ENABLE_NONFREE=ON',
   ];
