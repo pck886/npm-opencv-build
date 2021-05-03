@@ -38,7 +38,7 @@ exports.cmakeArchs = {
 };
 exports.defaultCmakeFlags = [
     '-GXcode',
-    `-DCMAKE_INSTALL_PREFIX=${dirs.opencvBuild}`,
+    "-DCMAKE_INSTALL_PREFIX=" + dirs_1.dirs.opencvBuild,
     '-DCMAKE_SYSTEM_PROCESSOR=arm64',
     '-DCMAKE_OSX_ARCHITECTURES=arm64',
     '-DWITH_OPENJPEG=OFF',
