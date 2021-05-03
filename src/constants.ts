@@ -50,7 +50,7 @@ export const defaultCmakeFlags = [
   "-D CMAKE_BUILD_TYPE=RELEASE",
   "CMAKE_INSTALL_PREFIX=/usr/local",
   "-D PYTHON3_EXECUTABLE=/opt/homebrew/Caskroom/miniforge/base/envs/pos/bin/python3",
-  "BUILD_opencv_python2=OFF",
+  "-D BUILD_opencv_python2=OFF",
   "-D BUILD_opencv_python3=ON",
   "-D OPENCV_ENABLE_NONFREE=ON",
 ];
